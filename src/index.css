@@ -1,0 +1,411 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  box-sizing: border-box;
+  color: #131921;
+  background-color: #ffffff;
+}
+
+.bg {
+  background-color: #ffffff;
+}
+
+#grad {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(#f9a080, #ffffff) no-repeat;
+}
+
+#search {
+  color: white;
+  margin-top: 10px;
+  margin-left: 60px;
+  font-size: 27px;
+}
+
+#search-mobile {
+  color: white;
+  margin-top: 10px;
+  font-size: 27px;
+}
+
+.link {
+  text-decoration: none;
+  color: #131921;
+}
+
+.footer {
+  border-color: #333333;
+  color: #333333;
+}
+
+.footer .footer-link {
+  text-decoration: none;
+  color: #f6f6f6;
+  font-size: 14px;
+}
+
+.footer .footer-link:hover {
+  transition: 0.2s ease all;
+  color: #b12704;
+}
+
+.link2 {
+  text-decoration: none;
+  color: #131921;
+}
+
+.money {
+  color: "#B12704";
+}
+
+.link2:hover {
+  text-decoration: underline;
+  transition: 0.2s ease all;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.textColor {
+  color: #131921;
+  text-decoration: none;
+}
+
+.hover:hover {
+  color: #b12704;
+  transition: all 0.3s ease;
+}
+
+.link:hover {
+  color: #b12704;
+  transition: 0.1s all ease;
+}
+
+.background {
+  background: #fff5fc;
+}
+
+.productBackground {
+  background: white;
+}
+
+.background-hover:hover {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.2s all ease;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.image2 {
+  object-fit: contain;
+}
+
+.roundImage {
+  border-radius: 50%;
+}
+
+div button svg.image-gallery-svg {
+  height: 50px !important;
+  width: 50px !important;
+}
+
+.callToAction {
+  /* #ff6600 */
+  background: #ed3941 !important;
+  color: white !important;
+}
+
+.callToAction2 {
+  /* #ff6600 */
+  background: #d11f28 !important;
+  color: white !important;
+}
+
+.profileLink {
+  cursor: pointer;
+  color: "white";
+  text-decoration: none;
+}
+
+.profileLink:hover,
+.profileLink:focus {
+  opacity: 0.7;
+  transition: all 0.1s ease;
+}
+
+.search {
+  cursor: pointer;
+}
+
+.search:hover {
+  opacity: 0.5;
+  transition: 0.3s all ease;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 25px;
+  color: rgb(77, 76, 76);
+}
+
+.chip-root {
+  list-style: none;
+  margin: 0;
+}
+
+.chip {
+  margin: 2px;
+}
+
+li::marker {
+  display: none;
+}
+
+[type="file"] {
+  height: 0;
+  overflow: hidden;
+  width: 0;
+}
+[type="file"] + label {
+  background: #f15d22;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  outline: none;
+  padding: 1rem 50px;
+  position: relative;
+  transition: all 0.3s;
+  vertical-align: middle;
+}
+
+[type="file"] + label.btn-2 {
+  background-color: #99c793;
+  border-radius: 50px;
+  overflow: hidden;
+}
+[type="file"] + label.btn-2::before {
+  color: #fff;
+  content: "\267B";
+  font-size: 100%;
+  height: 100%;
+  right: 130%;
+  line-height: 3.3;
+  position: absolute;
+  top: 0px;
+  transition: all 0.3s;
+}
+[type="file"] + label.btn-2:hover {
+  background-color: #497f42;
+}
+[type="file"] + label.btn-2:hover::before {
+  right: 75%;
+}
+
+.MuiStepLabel-label.MuiStepLabel-active,
+.MuiStepLabel-label {
+  color: "white" !important
+  ;
+}
+
+/* THUMBS UP CSS */
+.thumbsup-icon {
+  position: relative;
+  width: 280px;
+  height: 200px;
+}
+
+.thumbsup-icon svg {
+  position: absolute;
+}
+
+.thumbsup-icon .stripes {
+  fill: #f7f7f7;
+  animation: 1300ms stripes-swing infinite ease-in-out;
+}
+
+.thumbsup-icon .stars {
+  fill: #febb02;
+}
+
+.thumbsup-icon .star1 {
+  animation: 1300ms star-fly1 infinite;
+  z-index: 1;
+}
+
+.thumbsup-icon .star2 {
+  animation: 1300ms star-fly2 infinite;
+  z-index: 1;
+}
+
+.thumbsup-icon .star3 {
+  animation: 1300ms star-fly3 infinite;
+  z-index: 1;
+}
+
+.thumbsup-icon .star4 {
+  animation: 1300ms star-fly4 infinite;
+  z-index: 1;
+}
+
+.thumbsup-icon .star5 {
+  animation: 1300ms star-fly5 infinite;
+  z-index: 1;
+}
+
+.thumbsup-icon .thumbsup {
+  animation: 1300ms thumbsup-shake infinite ease-in-out;
+  z-index: 2;
+}
+
+@keyframes star-fly1 {
+  0% {
+    transform: translate(20%, 40%) scale(0.76, 0.76);
+    opacity: 0;
+  }
+  12.8% {
+    opacity: 1;
+  }
+  28.2% {
+    transform: translate(0, 0) scale(1, 1);
+  }
+}
+
+@keyframes star-fly2 {
+  0% {
+    transform: translate(-14%, 40%) scale(0.76, 0.76);
+    opacity: 0;
+  }
+  12.8% {
+    opacity: 1;
+  }
+  28.2% {
+    transform: translate(0, 0) scale(1, 1);
+  }
+}
+
+@keyframes star-fly3 {
+  0% {
+    transform: translate(5%, -35%) scale(0.76, 0.76);
+    opacity: 0;
+  }
+  12.8% {
+    opacity: 1;
+  }
+  28.2% {
+    transform: translate(0, 0) scale(1, 1);
+  }
+}
+
+@keyframes star-fly4 {
+  0% {
+    transform: translate(30%, 0) scale(0.76, 0.76);
+    opacity: 0;
+  }
+  12.8% {
+    opacity: 1;
+  }
+  28.2% {
+    transform: translate(0, 0) scale(1, 1);
+  }
+}
+
+@keyframes star-fly5 {
+  0% {
+    transform: translate(-20%, 0) scale(0.76, 0.76);
+    opacity: 0;
+  }
+  12.8% {
+    opacity: 1;
+  }
+  28.2% {
+    transform: translate(0, 0) scale(1, 1);
+  }
+}
+
+@keyframes thumbsup-shake {
+  0% {
+    transform: rotate(20deg) scale(0.74, 0.74);
+    opacity: 0.1;
+  }
+  7.7% {
+    opacity: 1;
+    transform: rotate(0) scale(1, 1);
+  }
+  15.4% {
+    transform: rotate(-11deg) scale(1.08, 1.08);
+  }
+  28.2% {
+    transform: rotate(0) scale(1, 1);
+  }
+}
+
+@keyframes stripes-swing {
+  20.5% {
+    transform: translate(4%, 0);
+  }
+  38.4% {
+    transform: translate(-2%, 0);
+  }
+  59% {
+    transform: translate(3.7%, 0);
+  }
+  79.5% {
+    transform: translate(0, 0);
+  }
+}
+
+/* PROFILE MOBILE MENU SCROLL */
+.menu-item {
+  padding: 0 40px;
+  margin: 5px 10px;
+  user-select: none;
+  cursor: pointer;
+  border: none;
+}
+.menu-item-wrapper.active {
+  border: 1px blue solid;
+}
+.menu-item.active {
+  border: 1px green solid;
+}
+
+.scroll-menu-arrow {
+  padding: 20px;
+  cursor: pointer;
+}
+
+.checkout-button {
+  font-weight: bold;
+  padding: 8px 22px;
+  border: none !important;
+  font-size: 0.9375rem;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.chat-bg {
+  flex-grow: 1;
+  background-color: "#F5F5F5";
+  padding: "30px";
+}
